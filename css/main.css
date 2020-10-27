@@ -13,8 +13,8 @@
 
     /*FONTS*/
     /* --heading-text: font-family: 'Raleway', sans-serif; */
-    --heading-text: font-family: 'Montserrat', sans-serif;
-    --main-text: font-family: 'Lato', sans-serif;
+    --heading-text: 'Montserrat', sans-serif;
+    --main-text: 'Lato', sans-serif;
 
 }
 
@@ -22,19 +22,22 @@
 /*TOP BAR*/
 /*********/
 .header {
-    background-color: var(--background);
+    /* background-color: var(--background); */
+    position: fixed;
     width: 100%;
+}
+.topbar {
+    background-color: var(--background);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    box-shadow: 0px .1px 5px var(--main-dark);
-}
-.topbar {
     padding: .75em;
+    box-shadow: 0px 0px 5px var(--main-dark);
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 1em;
+    width: 100%;
 }
 .menu {
     background-color: transparent;
@@ -43,11 +46,10 @@
     height: 24px;
     justify-self: start;
 }
-.menu .icon {
+.menu .closed, .menu .opened {
     color:var(--main-dark);
     padding: 0;
     align-self: center;
-    /* height: 1.5em; */
 }
 .logo img {
     width: 1.5em;
@@ -55,6 +57,31 @@
     position: relative;
     align-self: center; 
 }
+
+
+
+/*Fullscreen menu*/
 .nav {
-    position: absolute;
+    width: 100vw;
+}
+.nav .closed {
+    display: none;
+}
+.nav .opened {
+    background-color: var(--background);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.nav .options li {
+    padding: 2em;
+}
+.nav .options a {
+    color: var(--main-text);
+    font-family: var(--heading-text);
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
