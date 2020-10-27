@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+
+    /*COLOURS*/
+    --background: #ffffff;
+    --main-text: #2d2d2d;
+    /* --primary: ; */
+    /* --secondary: ;  */
+
+    /*FONTS*/
+    /* --heading-text: font-family: 'Raleway', sans-serif; */
+    --heading-text: font-family: 'Montserrat', sans-serif;
+    --main-text: font-family: 'Lato', sans-serif;
+
+}
+
+/*********/
+/*TOP BAR*/
+/*********/
+.header {
+    background-color: pink;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.topbar {
+    padding: .75em;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+}
+.menu {
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    justify-self: start;
+}
+.menu .icon {
+    color: white;
+    padding: 0;
+}
+.logo img {
+    width: 1.5em;
+    float: right;
+}
+.nav {
+    position: absolute;
+}
