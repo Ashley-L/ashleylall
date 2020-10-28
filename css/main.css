@@ -8,8 +8,8 @@
     --background: #ffffff;
     --main-text: #2d2d2d;
     --main-dark: #2d2d2d;
-    /* --primary: ; */
-    /* --secondary: ;  */
+    --primary-colour: #00C9C9;
+    --secondary-colour: #ac6acf ; 
 
     /*FONTS*/
     /* --heading-text: font-family: 'Raleway', sans-serif; */
@@ -27,21 +27,44 @@
     padding-top: 48px;
 } */
 .intro, .about, .projects, .contact {
-    padding: 0 1em;
-}
+    padding: 2em 2em;
+    /* margin: 2em 0; */
 
-h1 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading {
     font-family: var(--heading-text);
     font-size: 2em;
+    text-align: center;
+    justify-content: center;
     text-transform: uppercase;
+    /* padding-bottom: .25em; */
+    /* margin-bottom: .5em; */
 }
-h2 {
+.subheading {
     font-family: var(--heading-text);
     font-size: 1.5em;
+    text-align: center;
+    /* padding: .25em .25em; */
+    /* margin-bottom: .25em; */
 }
-p {
+.subheading-small {
+    font-size: 1em;
+    font-family: var(--heading-text);
+    text-align: center;
+}
+.normal-text {
     font-family: var(--main-text);
     font-size: 1em;
+}
+.bg-fill {
+    background-color: var(--secondary-colour);
+    display: table;
+    margin: 0 auto;
+    /* justify-content: center; */
 }
 
 /*********/
@@ -118,24 +141,17 @@ p {
 /*INTRO*/
 /*******/
 .intro {
-    background-color: lightblue;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    background-color: var(--primary-colour);
     justify-content: center;
-    align-items: center;
 }
 .intro .blurb {
     font-family: var(--heading-text);
     /* font-size: 2em; */
     text-align: center;
 }
-.intro .blurb > h2 {
-    padding: 0 3em .25em 3em;
-}
-.intro .blurb > p {
+/* .intro .blurb > p {
     padding: 0 3em;
-}
+} */
 
 
 
@@ -143,7 +159,7 @@ p {
 /*ABOUT*/
 /*******/
 .about {
-    min-height: 100vh;
+    text-align: left;
 }
 
 
@@ -154,3 +170,15 @@ p {
 .skills img {
     width: 2em;
 }
+
+
+
+/**********/
+/*PROJECTS*/
+/**********/
+
+
+
+/*********/
+/*CONTACT*/
+/*********/
