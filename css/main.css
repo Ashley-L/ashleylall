@@ -168,9 +168,67 @@
 /*SKILLS*/
 /********/
 .skills img {
-    width: 2em;
+    width: 3em;
+}
+.skills .table {
+    display: grid;
+    grid-template-rows: auto auto; /*design + code*/
+    grid-gap: 1em;
 }
 
+/*Design skills grid*/
+.design .table{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "a b c"
+    "d e f";
+    grid-gap: .5em;
+    justify-items: center;
+    justify-content: center;
+}
+.design-a {
+    grid-area: a;
+}
+.design-b {
+    grid-area: b;
+}
+.design-c {
+    grid-area: c;
+}
+.design-d {
+    grid-area: d;
+}
+.design-e {
+    grid-area: e;
+}
+.design-f {
+    grid-area: f;
+}
+
+/*Code skills grid*/
+.code .table{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    grid-gap: .5em;
+    justify-items: center;
+    justify-content: center;
+}
+.code-a {
+    grid-area: a;
+}
+.code-b {
+    grid-area: b;
+}
+.code-c {
+    grid-area: c;
+}
+.code-d {
+    grid-area: d;
+}
 
 
 /**********/
