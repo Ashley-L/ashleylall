@@ -8,8 +8,8 @@
     --background: #ffffff;
     --main-text: #2d2d2d;
     --main-dark: #2d2d2d;
-    --primary-colour: #00C9C9;
-    --secondary-colour: #ac6acf ; 
+    --primary-colour: #00D6CB;
+    --secondary-colour: #BA7FDD ; 
 
     /*FONTS*/
     /* --heading-text: font-family: 'Raleway', sans-serif; */
@@ -70,13 +70,8 @@
 /*********/
 /*TOP BAR*/
 /*********/
-.header {
-    /* background-color: var(--background); */
-    position: fixed;
-    width: 100%;
-}
 .topbar {
-    background-color: var(--background);
+    background-color: var(--main-dark);
     position: fixed;
     top: 0;
     left: 0;
@@ -88,51 +83,26 @@
     grid-gap: 1em;
     width: 100%;
 }
-.menu {
-    background-color: transparent;
-    padding: 0;
-    border: 0;
-    height: 24px;
-    justify-self: start;
+.nav .options {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1em;
+    height: 100%;
+    text-align: center;
+    align-items: center;
 }
-.menu .closed, .menu .opened {
-    color:var(--main-dark);
-    padding: 0;
-    align-self: center;
+.nav .options a {
+    color: var(--background);
+    font-family: var(--heading-text);
+    font-size: .75em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .logo img {
     width: 1.5em;
     float: right;
     position: relative;
     align-self: center; 
-}
-
-
-
-/*Fullscreen menu*/
-.nav {
-    width: 100vw;
-}
-.nav .closed {
-    display: none;
-}
-.nav .opened {
-    background-color: var(--background);
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.nav .options li {
-    padding: 2em;
-}
-.nav .options a {
-    color: var(--main-text);
-    font-family: var(--heading-text);
-    font-size: 2em;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 
