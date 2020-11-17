@@ -5,11 +5,12 @@
 :root {
 
     /*COLOURS*/
-    --background: #ffffff;
-    --main-text: #2d2d2d;
-    --main-dark: #2d2d2d;
-    --primary-colour: #00D6CB;
-    --secondary-colour: #BA7FDD ; 
+    --background: rgb(255, 255, 255); /*#ffffff*/
+    --main-text: rgb(45, 45, 45); /*2d2d2d*/
+    --main-dark: rgb(45, 45, 45);
+    --primary-colour: rgb(0, 214, 203); /*#00D6CB*/
+    --primary-tint: rgba(0, 214, 203, .3); /*#00D6CB*/
+    --secondary-colour: rgb(186, 127, 221); /*#BA7FDD*/
 
     /*FONTS*/
     /* --heading-text: font-family: 'Raleway', sans-serif; */
@@ -201,9 +202,54 @@
 }
 
 
+
 /**********/
 /*PROJECTS*/
 /**********/
+.projects .grid {
+    display: grid;
+    grid-template-rows: repeat(5, auto);   
+}
+.projects .thumbnail {
+    /* max-width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.projects .thumbnail img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover;
+    overflow: hidden; */
+    z-index: -1;
+}
+.projects .thumbnail figcaption {
+    position: absolute;
+    z-index: 10;
+}
+.projects .thumbnail a {
+    color: var(--background);
+    font-family: var(--heading-text);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* 
+.projects figcaption a:focus {
+    color: var(--secondary-colour);
+} */
+
+/* .overlay {
+    background-color: var(--primary-tint);
+} */
+/* 
+.overlay:focus {
+    background-color: var(--primary-tint);
+} */
+
+
 
 
 
