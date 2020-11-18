@@ -256,3 +256,49 @@
 /*********/
 /*CONTACT*/
 /*********/
+.contact {
+    position: relative;
+}
+.resume {
+    background-color: var(--primary-colour);
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    margin: 0 auto;
+}
+.resume a {
+    color: var(--main-dark);
+    font-family: var(--heading-text);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .25em 1em;
+
+}
+.socials ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.github img {
+    width: 24px;
+    height: 1.5em;
+}
+.socials li {
+    position: relative;
+}
+.socials a {
+    color: var(--main-dark);
+    background-color: var(--primary-colour);
+    width: 2em;
+    height: 2em;
+    margin: .5em;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    text-decoration: none;
+}
+.github-icon, .linkedin-icon {
+    width: 32px;
+}
