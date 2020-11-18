@@ -302,3 +302,15 @@
 .github-icon, .linkedin-icon {
     width: 32px;
 }
+
+
+/********/
+/*FOOTER*/
+/********/
+.footer {
+    background-color: var(--secondary-colour);
+    text-align: center;
+    font-size: .5em;
+    padding: 1em;
+
+}
