@@ -1,0 +1,42 @@
+body {
+    margin-top: 48px;
+}
+
+
+/*************/
+/*BREADCRUMBS*/
+/*************/
+.breadcrumbs {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1em 2em 0 2em;
+
+    /* margin-right: 5em; */
+}
+.breadcrumbs .back span {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+.breadcrumbs a {
+    color: var(--main-dark);
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*****************/
+/*PROJECT CONTENT*/
+/*****************/
+.project-content {
+    padding-top: 1em;
+}
+.project-content img {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: .75em;  
+}
+.project-content div:first-child {
+    justify-content: start;
+}
