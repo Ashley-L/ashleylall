@@ -6,9 +6,10 @@ console.log(`current page is ${$currentPage}`)
 
 if (window.location.pathname != "/index.html") {
     console.log(`not on index`)
+    scroll(0,0)
 } else {
     console.log(`on index`)
-    scroll(0,0)
+    
 }
 
 ////////////////////////

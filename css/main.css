@@ -99,7 +99,7 @@
     display: grid;
     grid-template-columns: 15em 1fr;
     grid-gap: 1em;
-    width: 100%;
+    min-width: 100%;
 }
 .nav .options {
     display: grid;
