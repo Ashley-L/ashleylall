@@ -9,7 +9,7 @@
     <meta name="description" content="My portfolio">
     <meta name="author" content="Ashley Lall">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons%7CMaterial+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
@@ -34,24 +34,26 @@
             <div class="blurb">
                 <h2 class="subheading greeting">Hey there.</h2>
                 <h2 class="subheading name">I'm Ashley.</h2>
-                <p class="normal-text">Web design and interaction design.</p>
+                <p class="normal-text">Web designer, interaction designer, bubble tea fanatic.</p>
             </div>
         </section>
 
         <section id="about" class="about">
             <div class="blurb">
-                <h1 class="heading bg-fill">About</h1>
-                <p class="normal-text">So I can write an essay as well as the next person, but at some point I realized that life was just not for me. </p>
-                <p class="normal-text">What I really enjoy is solving problems and being challenged. I like creating things and experimenting with things and making things look great. </p>
+                <h1 class="heading bg-fill-primary">About</h1>
+                <p class="normal-text">So I can write an essay as well as the next person, but at some point I realized that life was just not for me. Reading hundreds of pages </p>
+                <p class="normal-text">What I really enjoy is solving problems and being challenged. I like creating things (that are not essays) and experimenting with things and making things look great. I find that web development and interaction design give me the chance to do all of the things I love. I'm always looking for more opportunities to grow as a designer.</p>
             </div>
             
             <div class="skills">
-                <h2 class="subheading bg-fill" >Skills</h2>
-                <p class="normal-text">I have experience with:</p>
+                <div class="blurb">
+                    <h2 class="subheading bg-fill-secondary" >Skills</h2>
+                    <p class="normal-text">I have experience with:</p>
+                </div>
                 
                 <div class="table">
                     <div class="design">
-                        <h3 class="subheading-small bg-fill">Design stuff</h3>
+                        <h3 class="subheading-small bg-fill-secondary">Design stuff</h3>
                         <div class="table">
                             <img class="design-a" src="img/skills-ai.png" alt="Adobe Illustrator">
                             <img class="design-b" src="img/skills-ps.png" alt="Adobe Photoshop">
@@ -63,7 +65,7 @@
                     </div>
     
                     <div class="code">
-                        <h3 class="subheading-small bg-fill">Front-end stuff</h3>
+                        <h3 class="subheading-small bg-fill-secondary">Front-end stuff</h3>
                         <div class="table">
                             <img class="code-a" src="img/skills-html.png" alt="HTML 5">
                             <img class="code-b" src="img/skills-css.png" alt="CSS">
@@ -76,7 +78,9 @@
         </section>
 
         <section id="projects" class="projects">
-            <h1 class="heading bg-fill">Projects</h1>
+            <div class="blurb">
+                <h1 class="heading bg-fill-primary">Projects</h1>
+            </div>
             <div class="grid">
                 <figure class="thumbnail">
                     <a href="#project-one">
@@ -113,17 +117,20 @@
 
         <section id="contact" class="contact">
             <div class="blurb">
-                <h1 class="heading bg-fill">Contact</h1>
-                <p class="normal-text">Feel free to check out my resume or contact me at any of the links below.</p>
-                <button class="resume" aria-label="Resume"><a href="https://drive.google.com/file/d/1mPbMRYk-4jCJbYHjEcZnBo47S8A-hRWQ/view?usp=sharing" target="_blank">Resume</a></button>
+                <h1 class="heading bg-fill-primary">Contact</h1>
+                <p class="normal-text">Feel free to check out my resume or get in touch with me at any of the links below.</p>
+            </div>
+            <div class="links">
+                <div class="resume"><a href="https://drive.google.com/file/d/1mPbMRYk-4jCJbYHjEcZnBo47S8A-hRWQ/view?usp=sharing" target="_blank">Resume</a></div>
                 <div class="socials">
                     <ul>
                         <li class="email"><a href="mailto:ashley.lall@outlook.com"><span class="material-icons">email</span></a></li>
-                        <li class="github"></li><a href="https://github.com/ashleylall" target="_blank"><img class="github-icon" src="img/github-icon.png" alt="github link"></a></li>
-                        <li class="linkedin"></li><a href="https://www.linkedin.com/in/ashleylall/" target="_blank"><img class="linkedin-icon" src="img/linkedin-icon.png" alt="linkedin icon"></a></li>
+                        <li class="github"><a href="https://github.com/ashleylall" target="_blank"><img class="github-icon" src="img/github-icon.png" alt="github link"></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/ashleylall/" target="_blank"><img class="linkedin-icon" src="img/linkedin-icon.png" alt="linkedin icon"></a></li>
                     </ul>
                 </div>
             </div>
+            
         </section>
 
     </main>
