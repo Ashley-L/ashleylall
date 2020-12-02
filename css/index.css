@@ -42,7 +42,7 @@
 }
 .skills .table {
     display: grid;
-    grid-template-rows: auto auto; /*design + code*/
+    grid-template-rows: auto auto auto; /*design + code*/
     grid-gap: 1em;
 }
 
@@ -103,7 +103,21 @@
     grid-area: d;
 }
 
-
+.learning .table {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "a b";
+    grid-gap: .5em;
+    justify-items: center;
+    justify-content: center;
+}
+.learning-a {
+    grid-area: a;
+}
+.learning-b {
+    grid-area: b;
+}
 
 /**********/
 /*PROJECTS*/

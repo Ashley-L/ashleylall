@@ -63,6 +63,7 @@
     font-family: var(--main-text);
     font-size: 1em;
     margin-bottom: .75em;
+    line-height: 140%;
 }
 .bg-fill-primary {
     background-color: var(--primary-colour);
