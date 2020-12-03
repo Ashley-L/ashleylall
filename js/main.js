@@ -1,4 +1,7 @@
-let $topbarHeight = document.querySelector('.topbar').scrollHeight  
+let $topbarHeight = document.querySelector('.topbar').scrollHeight 
+let mediaQuery320 = window.matchMedia('(min-width: 320px)')
+let mediaQuery1024 = window.matchMedia('(min-width: 1024px)')
+
 
 // detect the page you're on
 let $currentPage = window.location.pathname
@@ -34,14 +37,24 @@ $sectionLinkAll.forEach($sectionLink => {
         // console.log($clickedSection)
 
         // adjust for topbar height
-        let $sectionPosition = ($clickedSection.getBoundingClientRect().top - $topbarHeight) + window.scrollY 
+        let $sectionPosition = ($clickedSection.getBoundingClientRect().top) + window.scrollY 
+        let $sectionPositionMobile = ($clickedSection.getBoundingClientRect().top-$topbarHeight) + window.scrollY 
 
         // smooth scroll to correct position
-        window.scrollTo({
-            top: $sectionPosition, 
-            left: 0, 
-            behavior:'smooth'
-        })
+
+        if (mediaQuery1024.matches) {
+            window.scrollTo({
+                top: $sectionPosition, 
+                left: 0, 
+                behavior:'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: $sectionPositionMobile, 
+                left: 0, 
+                behavior:'smooth'
+            }) 
+        }
 
         
     })
