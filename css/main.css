@@ -210,4 +210,8 @@
     .footer .heading {
         text-align: center;
     }
+
+    .test img {
+        width: 2em;;
+    }
 }
