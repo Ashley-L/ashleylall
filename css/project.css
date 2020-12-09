@@ -1,6 +1,10 @@
 body {
     margin-top: 48px;
 }
+.heading {
+    text-align: center;
+    margin: 0 auto;
+}
 .subheading-small {
     text-align: left;
     padding-top: 1em;

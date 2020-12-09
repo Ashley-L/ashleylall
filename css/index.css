@@ -235,6 +235,12 @@
     .intro .subheading {
         text-align: center;
     }
+    .greeting, .name {
+        font-size: 4em;
+    }
+    .intro .blurb p {
+        font-size: 1.5em;
+    }
     .blurb {
         width: 100%;
         /* max-width: 950px; */
