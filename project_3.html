@@ -37,14 +37,61 @@
         </div>
         <section class="project-content">
             <div class="blurb">
-                <h1 class="heading bg-fill-primary">[Project 3 Name]</h1>
-                <img class="test" src="https://picsum.photos/250/" alt="project image">  
+                <h1 class="heading bg-fill-primary">SUPERDAZE</h1>
+                <figure>
+                    <img class="image" src="img/thumbnail_superdaze.png" alt="Superdaze logo">
+                    <figcaption class="caption normal-text">SUPERDAZE logo.</figcaption>
+                </figure>            
             </div>
             <div class="description">
-                <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum voluptatem ipsam ut, velit quia, eum a praesentium minima ad repellat illo dicta fugiat inventore sed totam consequuntur iusto assumenda.</p>
-                <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum voluptatem ipsam ut, velit quia, eum a praesentium minima ad repellat illo dicta fugiat inventore sed totam consequuntur iusto assumenda.</p>
-                <img src="https://picsum.photos/250/" alt="project image">  
-                <p class="normal-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum voluptatem ipsam ut, velit quia, eum a praesentium minima ad repellat illo dicta fugiat inventore sed totam consequuntur iusto assumenda.</p>
+                <p class="normal-text">Superdaze was produced for my Interface Development II class in second year with my team member Kim Nguyen. </p>
+               
+                <h2 class="subheading-small">Requirements</h2>
+                <p class="normal-text">This final assignment took about a month to complete. The purpose of this project was to learn about how to improve the user experience of reading an article on a website. There were four major requirements: the implementation of a scrollspy to help the user understand where they are on the page, a carousel component, an infinite scroll, and one additional component that would improve user experience.</p>
+                
+                <h2 class="subheading-small">Plan</h2>
+                <p class="normal-text">I am a huge fan of the Marvel Cinematic Universe, so I naturally and immediately suggested we do something superhero-related. After some brainstorming with a simple article that would outline the profiles of four superheroes and four supervillains. Thus, the superhero website ‘SUPERDAZE’ was born, as was our article ‘Top 8 Marvel Heroes and Villains.’ The design of page was styled with clasically bright and gaudy superhero websites in mind.</p>
+                
+                <h2 class="subheading-small">Role</h2>
+                <p class="normal-text">After we wrote the content and finished our basic CSS, we moved on to the JavaScript component. I able to write code for each component we planned on making. </p>
+            
+                <p class="normal-text">I was originally tasked with designing the scrollspy that would allow the user to navigate to different characters on the page. If the user’s scroll position was within the bounding rectangle of a character section, the little character head (which I made in Illustrator!) would increase in size to indicate that the user was currently viewing the respective character’s profile. One issue I have noticed with this is that there is a small strip of space after the hero section and before the villains section where there is no character content to read, leaving the scrollspy inactive. This makes it a bit difficult for the user to identify where they are on the page. </p>
+                <figure>
+                    <img class="image" src="img/superdaze_scrollspy.png" alt="Superdaze scrollspy">
+                    <figcaption class="caption normal-text">SUPERDAZE scrollspy.</figcaption>
+                </figure>   
+               
+                <p class="normal-text">Our carousel component would be clickable character thumbnails in each section. I was not initially tasked with coding this component, but I helped troubleshoot when my partner was having issues. We were having trouble with getting the big character image to reflect the clicked thumbnail. The solution we came up with was to change the image source of the big image to that of the clicked thumbnail and do this for each character section.</p>
+                <figure>
+                    <img class="image" src="img/superdaze_thumbnails.png" alt="Superdaze thumbnails">
+                    <figcaption class="caption normal-text">SUPERDAZE thumbnails.</figcaption>
+                </figure>   
+               
+                <p class="normal-text">To make the infinite scroll component, I had to create a new element when the user’s scroll position was near the bottom of the original article. To make the appearance of the new article less jarring, we added a fade transition.</p>
+                <figure>
+                    <img class="image" src="img/superdaze_infinite-scroll.png" alt="Superdaze infinite scroll">
+                    <figcaption class="caption normal-text">SUPERDAZE infinite scroll.</figcaption>
+                </figure>  
+               
+                <p class="normal-text">For the additional UX components, we had decided on an option to filter characters by movie, which had seeming daunting at first, but I found the logic in the end to be rather simple. I applied class lists based on movie to every character, so that when I clicked on a movie tag, I would show all characters with the respective movie class and hide the content of those without it. This works, though one change I would make to the filtering system overall is to have the functionality to deselect a button and display all characters again. The work-around I added in was to select an ‘all’ button if the user wants to see all characters after filtering by movie.</p>
+                <figure>
+                    <img class="image" src="img/superdaze_filter.png" alt="Superdaze filter">
+                    <figcaption class="caption normal-text">SUPERDAZE filter.</figcaption>
+                </figure>  
+                
+                <p class="normal-text">Near the end of the project, I suggested adding a fixed footer for an additional level of usability. An infinite scroll was required, but I found it to make the site less usable – the user would never be able to reach the footer. </p>
+                
+
+                <p class="subheading-small">Next steps</p>
+                <p class="normal-text">This was an enjoyable project to work on, especially since I was so enthusiastic about the subject matter. I’ve outlined some bugs I’m currently aware of and I think those pose as a good starting point for improvement. I definitely learned a lot about some of the uses JavaScript can have in making a webpage interactive and I hope to continue to have opportunities to apply these skills to future projects.</p>
+                
+                <!-- <figure>infn
+                    <img class="image" src="img/superdaze_screen.png" alt="Superdaze website">
+                    <figcaption class="caption normal-text">SUPERDAZE website.</figcaption>
+                </figure>     
+                <p class="normal-text"></p> -->
+
+                
             </div>
         </section>
        
