@@ -232,7 +232,7 @@
 
 @media screen and (min-width: 1024px) {
 
-    .intro .subheading, .footer .heading {
+    .intro .subheading {
         text-align: center;
     }
     .blurb {
