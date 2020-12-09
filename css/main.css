@@ -146,6 +146,19 @@
     .bg-fill-primary {
         text-align: left;
     }
+    .container {
+        max-width: 950px;
+    }
+    .heading, .subheading {
+        text-align: left;
+    }
+    .subheading-small {
+        font-size: 1.15em;
+    }
+    .normal-text {
+        font-size: 1.15em;
+        line-height: 150%;
+    }
     .layout {
         /* display: grid; */
         /* grid-template-columns: auto; */
