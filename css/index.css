@@ -230,6 +230,40 @@
 /*BREAKPOINTS*/
 /*************/
 
+
+@media screen and (min-width: 768px) {
+
+    .greeting, .name {
+        font-size: 3em;
+    }
+    .intro .blurb p {
+        font-size: 1.5em;
+    }
+
+    .skills .table {
+        padding-top: .55em;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+    }
+    .projects .grid {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        margin: auto 0;
+        grid-gap: 1em;
+    }
+
+    .thumbnail {
+        width: 100%;
+        margin: 0 auto .75em auto;
+    }
+
+ }
+
+
+
+
+
 @media screen and (min-width: 1024px) {
 
     .intro .subheading {
@@ -246,18 +280,6 @@
         /* max-width: 950px; */
         margin: 0 auto;
     }
-    .skills .table {
-        padding-top: 1.75em;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-    }
-    .projects .grid {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        margin: auto 0;
-        grid-gap: 1em;
-    }
-
+    
 
 }

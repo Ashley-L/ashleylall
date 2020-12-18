@@ -141,6 +141,18 @@
 /*BREAKPOINTS*/
 /*************/
 
+
+
+/* @media screen and (min-width: 768px) {
+
+    .nav .options a {
+        font-size: 1.15em;
+        padding-right: 1em;
+    }
+ } */
+
+
+
 @media screen and (min-width: 1024px) {
 
     .bg-fill-primary {
