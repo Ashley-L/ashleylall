@@ -1,5 +1,6 @@
 let $topbarHeight = document.querySelector('.topbar').scrollHeight 
 let mediaQuery320 = window.matchMedia('(min-width: 320px)')
+let mediaQuery768 = window.matchMedia('(min-width: 768px)')
 let mediaQuery1024 = window.matchMedia('(min-width: 1024px)')
 
 
@@ -41,6 +42,20 @@ $sectionLinkAll.forEach($sectionLink => {
         let $sectionPositionMobile = ($clickedSection.getBoundingClientRect().top-$topbarHeight) + window.scrollY 
 
         // smooth scroll to correct position
+        if (mediaQuery768.matches) {
+            window.scrollTo({
+                top: $sectionPosition, 
+                left: 0, 
+                behavior:'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: $sectionPositionMobile, 
+                left: 0, 
+                behavior:'smooth'
+            }) 
+        }
+
 
         if (mediaQuery1024.matches) {
             window.scrollTo({
@@ -56,6 +71,19 @@ $sectionLinkAll.forEach($sectionLink => {
             }) 
         }
 
+
+
         
     })
 })
+
+
+
+
+///////////////
+// SCROLLSPY //
+///////////////
+
+// basically if your scroll position is w/in a section,
+// change the colour of the nav link to blue
+
