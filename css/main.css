@@ -143,13 +143,16 @@
 
 
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     .nav .options a {
-        font-size: 1.15em;
+        font-size: 1.05em;
         padding-right: 1em;
     }
- } */
+    .topbar {
+        padding: .75em 1.5em;
+    }
+ }
 
 
 
@@ -195,7 +198,8 @@
         grid-template-areas: 
         "logo"
         "options";
-        /* padding: 5em .75em; */
+        /* padding: auto .75em auto ; */
+        padding: .75em;
         font-size: 1.75em;
         text-align: right;
     }
@@ -217,6 +221,10 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto auto auto;
+    }
+    .nav .options a {
+        font-size: .75em;
+        padding-right: 0em;
     }
 
     .footer .heading {
