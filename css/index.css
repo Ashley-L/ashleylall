@@ -268,8 +268,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        height: 100%;
+        /* width: 100%; */
+        /* height: 100%; */
     }
     .project .tile a {
         display: block;
@@ -317,7 +317,7 @@
     }
     .projects .intro .blurb {
         font-family: var(--main-text);
-        font-size: .75em;
+        font-size: .6em;
         text-transform: none;
         line-height: 140%;
         letter-spacing: 0;
