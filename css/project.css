@@ -41,9 +41,9 @@ body {
 .description .caption {
     font-size: .75em;
 }
-.project-content {
+/* .project-content {
     padding-top: 1em;
-}
+} */
 /* .project-content img {
     display: flex;
     margin: 0 auto;
@@ -106,6 +106,81 @@ body {
     .project-content .caption {
         font-size: 1em;
     }
+
+    /***********/
+    /*NEW STUFF*/
+    /***********/
+    /* .project-content .info, .project-content .process {
+        background-color: pink;
+    }
+    .project-content .context, .project-content .outcome {
+        background-color: lightgreen;
+    } */
+
+
+    .grid-two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .grid-three-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em; 
+    }
+
+
+    .project-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .project-content h2 {
+        /* padding-top: 2em; */
+        padding-bottom: 1em;
+    }
+    .project-content .section {
+        padding-top: 5em;
+    }
+    .project-content .normal-text {
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+
+    .project-content .info {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr; */
+        /* grid-gap: 2em; */
+        /* height: 100vh; */
+        /* margin: 5em 0; */
+        padding-top: 6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-content .info .heading {
+        text-align: left;
+        margin-bottom: .5em;
+    }
+    .project-content .info img {
+        width: 100%;
+    }
+ 
+    .disclosure .process .grid-two-columns {
+        padding: 1em 0;
+    }
+    .disclosure .outcome .grid-three-columns {
+        padding-bottom: 1em;
+    }
+
+    .disclosure .outcome {
+        padding-bottom: 10em;
+    }
+    .disclosure .outcome img {
+        width: 100%;
+    }
+
+    
+
 
 
 }

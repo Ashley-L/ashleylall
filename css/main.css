@@ -31,7 +31,7 @@
 /* .main {
     height: 100vh;
 } */
-.about, .contact, .project-content {
+.about, .contact {
     padding: 2em 2em;
     /* margin: 2em 0; */
 
@@ -81,9 +81,7 @@
     margin: 0 auto;
     padding: .15em;
 } */
-.blurb .heading {
-    margin-bottom: .75em;
-}
+
 
 
 
