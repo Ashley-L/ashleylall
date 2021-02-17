@@ -110,38 +110,66 @@
 /**********/
 /*PROJECTS*/
 /**********/
-.projects .grid {
-    display: grid;
-    grid-template-rows: repeat(5, auto);   
+
+/*Thumbnail BG colours*/
+.thumb-shltr {
+    background-color: #2d2d2d;
 }
-.projects .thumbnail {
-    /* max-width: 100%; */
+.thumb-disclosure {
+    background-color: #a0071a;
+}
+.thumb-raywater {
+    background-color: #daeef1;
+}
+.thumb-superdaze {
+    background-color: #f5cb5c;
+}
+.thumb-hilda {
+    background-color: #2d2d2d;
+}
+
+/*Thumbnails*/
+.projects {
+    padding-top: 48px;
+}
+
+.projects .tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.project .tile a {
+    display: block;
+}
+.projects .tile img {
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin-bottom: .75em;
+    margin: 0 auto;
+    max-width: 100%;
+    /* padding: 5em; */
 }
-.projects .thumbnail img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    /* object-fit: cover;
-    overflow: hidden; */
-    z-index: -1;
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto;
+    line-height: 140%;
+    height: 50vh;
 }
-.projects .thumbnail figcaption {
-    position: absolute;
-    z-index: 10;
+.projects .intro .blurb {
+    font-family: var(--main-text);
+    font-size: .6em;
+    text-transform: none;
+    line-height: 140%;
+    letter-spacing: 0;
+    margin-top: .5em;
 }
-.projects .thumbnail a {
-    color: var(--background);
-    font-family: var(--heading-text);
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-/* 
 
 
 
@@ -208,32 +236,48 @@
 
 @media screen and (min-width: 768px) {
 
-    /* .greeting, .name {
-        font-size: 3em;
-    } */
-    .intro .blurb p {
-        font-size: 1.5em;
-    }
-
-    .skills .table {
-        padding-top: .55em;
+    /*Thumbnails*/
+    .projects {
+        /* min-height: 100vh; */
+        padding-top: 48px;
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;  
+        /* grid-template-rows: 1fr 1fr;       */
     }
-    .projects .grid {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto;
-        margin: auto 0;
-        grid-gap: 1em;
-    }
-
-    .thumbnail {
+  
+    .projects .tile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-        margin: 0 auto .75em auto;
+        /* height: 100%; */
+    }
+    .project .tile a {
+        display: block;
+    }
+    .projects .tile img {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin: 0 auto;
+        max-width: 100%;
+        /* padding: 5em; */
     }
 
- }
+    .intro {
+        height: 100%;
+    }
+    .projects .intro .blurb {
+        font-family: var(--main-text);
+        font-size: .6em;
+        text-transform: none;
+        line-height: 140%;
+        letter-spacing: 0;
+        margin-top: .5em;
+    }
+
+
+}
 
 
 
@@ -241,21 +285,7 @@
 
 @media screen and (min-width: 1024px) {
 
-    /* .intro .subheading {
-        text-align: center;
-    }
-    .greeting, .name {
-        font-size: 4em;
-    }
-    .intro .blurb p {
-        font-size: 1.5em;
-    }
-    .blurb {
-        width: 100%;
-        margin: 0 auto;
-    } */
-
-
+    /*Thumbnails*/
     .projects {
         min-height: 100vh;
         padding-top: 48px;
@@ -283,28 +313,6 @@
         /* padding: 5em; */
     }
 
-
-    /* .projects .tile:hover .pop-up {
-        display: block;
-    }
-    .projects .tile:hover .greeting {
-        display: none;
-    } */
-    .thumb-shltr {
-        background-color: #2d2d2d;
-    }
-    .thumb-disclosure {
-        background-color: #a0071a;
-    }
-    .thumb-raywater {
-        background-color: #daeef1;
-    }
-    .thumb-superdaze {
-        background-color: #f5cb5c;
-    }
-    .thumb-hilda {
-        background-color: #2d2d2d;
-    }
     .intro {
         display: flex;
         flex-direction: column;
@@ -323,6 +331,14 @@
         letter-spacing: 0;
         margin-top: .5em;
     }
+
+    /* .projects .tile:hover .pop-up {
+        display: block;
+    }
+    .projects .tile:hover .greeting {
+        display: none;
+    } */
+    
     /* .pop-up {
         display: none;
         font-family: var(--main-text);
