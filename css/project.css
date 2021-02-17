@@ -196,5 +196,15 @@ body {
     }
 
 
+    .superdaze .features .scrollspy img {
+        width: 60%;
+        /* height: 100%; */
+    }
+    .superdaze .next-steps {
+        padding-bottom: 10em;
+    }
+    .superdaze .subheading-small {
+        padding-top: 3em;
+    }
 
 }
