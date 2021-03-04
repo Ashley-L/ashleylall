@@ -65,9 +65,10 @@
 }
 .normal-text {
     font-family: var(--main-text);
-    font-size: 1em;
+    font-size: 1.05em;
     margin-bottom: .75em;
-    line-height: 140%;
+    line-height: 160%;
+    padding: .3em 0;
 }
 /* .bg-fill-primary {
     background-color: var(--primary-colour);
