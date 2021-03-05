@@ -65,6 +65,7 @@ html, body {
     font-size: 1em;
     font-family: var(--heading-text);
     text-align: center;
+    padding-top: 3em;
     margin-bottom: .25em;
 }
 .normal-text {
