@@ -44,12 +44,15 @@ body {
 }
 
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    overflow-y: auto;
+    /* margin-top: 66px; */
+
 }
 .hero .image {
     max-width: 400px;
@@ -57,28 +60,126 @@ body {
 .hero > * {
     padding: 1rem;
 }
+
 .disclosure .hero {
     background-color: #a0071a;
 }
 .disclosure .hero .image {
-    max-width: 60%;
+    max-width: 200px;
+    width: 100%;
 }
+
 .raywater .hero {
     background-color: #daeef1;
 }
 .raywater .hero .image {
-    max-width: 60%;
+    max-width: 200px;
+    width: 100%;
 }
+
 .superdaze .hero {
     background-color: #f5cb5c;
 }
+
 .shltr .hero {
     background-color: #d36c6c;
 }
+
 .hilda .hero {
     background-color: #ec63ce;
 }
 
 .info {
     padding-top: 2em;
+}
+
+
+
+/*********/
+/* 768px */
+/*********/
+@media screen and (min-width: 768px) {
+   
+    .heading {
+        font-size: 3em;
+    }
+    .subheading {
+        font-size: 2.5em;
+    }
+    .subheading-small {
+        font-size: 1.5em;
+    }
+    .normal-text {
+        font-size: 1.2em;
+    }
+    .section {
+        padding: 2em 6em;
+    }
+
+    .hero > * {
+        padding: 3rem;
+    }
+
+    .info {
+        padding-top: 4em;
+    }
+
+    .disclosure .hero .image {
+        width: 300px;
+    }
+    .disclosure .hero .heading {
+        padding: 2rem;
+    }
+
+}
+
+
+
+/**********/
+/* 1024px */
+/**********/
+@media screen and (min-width: 1024px) {
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .grid-two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+    .grid-three-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em; 
+    }
+
+    .project-content .heading {
+        padding: 0;
+    }
+    .subheading, .subheading-small, .normal-text {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .section {
+        padding: 1em 0;
+    }
+
+    .hero * {
+        margin: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .disclosure .hero .image {
+        max-width: 300px;
+        width: 100%;
+    }
+
+
+    .info {
+        padding-top: 5em;
+    }
+
 }
