@@ -99,6 +99,51 @@ body {
 
 
 
+/***************************/
+/* Mini project thumbnails */
+/***************************/
+
+.other-projects {
+    padding: 2em;
+}
+/* .other-projects .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    flex-grow: 1;
+    flex-basis: 33%;
+    justify-content: space-between;
+    flex: 1 0 30%;
+} */
+.other-projects .subheading-small {
+    padding-top: .5em;
+}
+.other-projects .thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5em;
+}
+.mini-tile img {
+    /* width: 5em; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*temp until you get theses thumbnails*/
+.other-projects .thumb-shltr, .other-projects .thumb-hilda {
+    background-color: black;
+    /* width: 5em;
+    height: 5em; */
+
+}
+
+
+
+
+
+
 /*********/
 /* 768px */
 /*********/
