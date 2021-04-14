@@ -26,6 +26,7 @@
     margin-bottom: 1em;
 }
 
+
 /*********/
 /*CONTACT*/
 /*********/
@@ -54,6 +55,8 @@
 
 }
 
+
+/* Icons */
 .socials {
     display: flex;
     flex-direction: row;
@@ -65,28 +68,50 @@
     position: relative;
     /* width: 100%; */
     /* margin: 0 auto; */
+    padding: 2.5em;
 
 }
 .socials a {
-    /* background-color: var(--background); */
-    border: 1px solid var(--main-dark);
-    /* width: 2em; */
-    /* width: 2em; */
-    /* height: 2em; */
-    margin: .5em;
+    /* margin: .5em; */
     display: flex; 
     align-items: center;
     justify-content: center;
-    border-radius: 100%;
+    /* border-radius: 100%; */
     text-decoration: none;
 }
-.socials a:hover {
-    background-color: var(--main-dark);
-}
-.socials img {
-    width: 3em;
 
+.socials__icon {
+    font-size: 2em;
+    color: var(--background);
 }
+.socials__background {
+    font-size: 3.5em;
+    color: var(--main-dark);
+}
+.socials a:hover .socials__background{
+    color: var(--primary-colour);
+}
+.socials a:hover .socials__icon {
+    color: var(--main-dark);
+}
+
+/* github is reverse of normal icons */
+.github .socials__icon {
+    font-size: 3.5em;
+    color: var(--main-dark); 
+}
+.github .socials__background {
+    font-size: 3.5em;
+    color: var(--background);
+}
+.socials .github a:hover .socials__background{
+    color: var(--main-dark);
+}
+.socials .github a:hover .socials__icon {
+    color: var(--primary-colour);
+}
+
+
 
 
 /********/
@@ -306,7 +331,7 @@
     }
 
     .about {
-        padding: 2em 6em;
+        /* padding: 2em 6em; */
         padding-top: 5em;
     }
 
