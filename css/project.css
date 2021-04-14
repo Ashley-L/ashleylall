@@ -86,7 +86,18 @@ body {
 }
 
 .shltr .hero {
-    background-color: #fdb8a3;
+    background-color: #fee7e6;
+    /* width: 100%; */
+}
+.shltr .hero .image {
+    max-width: 150px;
+    width: 100%;
+}
+.shltr .mockup {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+    max-height: 640px;
+    width: 100%;
 }
 
 .hilda .hero {
@@ -182,6 +193,10 @@ body {
         padding: 2rem;
     }
 
+    .shltr .mockup {
+        width: 360px;
+        height: 640px;
+    }
 
     .other-projects .thumbnails {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
