@@ -172,6 +172,7 @@ body {
     /* Project thumbnail hover */
     .thumb-details {
         display: none;
+        position: absolute;
     }
 
 

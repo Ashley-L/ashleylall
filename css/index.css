@@ -250,6 +250,7 @@
 
 .thumb-details {
     display: none;
+    position: absolute;
 }
 
 
@@ -365,6 +366,7 @@
     }
 
     /* Project thumbnail hover */
+
     .tile:hover .thumb-details {
         background-color: var(--main-dark-opacity);
         color: var(--background);
@@ -376,13 +378,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center; 
+        /* opacity: 1;  */
+        /* transition: all .25s ease-in-out; */
+
     }
+
+
     .thumb-details .heading {
         font-size: 2.5em;
         text-align: center;
-    }
-    .thumb-details .subheading-small {
-        padding-top: 1em;
     }
 
 }
