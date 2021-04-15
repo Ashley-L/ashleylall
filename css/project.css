@@ -224,6 +224,12 @@ body {
         width: 360px;
         height: 640px;
     }
+    .shltr .image {
+        margin: 2em 0;
+    }
+    .shltr .info .bold {
+        font-weight: 600;
+    }
 
     .other-projects .thumbnails {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
