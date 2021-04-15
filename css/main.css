@@ -208,7 +208,7 @@ html, body {
     }
 
     /* Link hover */
-    .link-hover_text {
+    .link-hover__text {
         color: var(--main-text);
     }
     .link-hover__text:hover {
