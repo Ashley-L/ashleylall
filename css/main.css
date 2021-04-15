@@ -85,6 +85,8 @@ html, body {
 
 
 
+
+
 /*********/
 /*TOP BAR*/
 /*********/
@@ -203,6 +205,18 @@ html, body {
 
     .test img {
         width: 2em;;
+    }
+
+    /* Link hover */
+    .link-hover_text {
+        color: var(--main-text);
+    }
+    .link-hover__text:hover {
+        color: var(--primary-colour);
+    }
+
+    .link-hover__heading:hover a {
+        color: var(--primary-colour);
     }
 
 
