@@ -37,7 +37,7 @@
 
             <!-- Hero  -->
             <div class="section hero">
-                <img class="image" src="img/logo-disclosure-cropped.png" alt="Logo for Project Disclosure">
+                <img class="image" src="img/logo-disclosure-cropped-bw.png" alt="Logo for Project Disclosure">
                 <h1 class="heading">Project Disclosure</h1>
             </div>
 
@@ -92,7 +92,16 @@
 
                     <p class="normal-text">As these projects were originally intended to be displayed at our Year End Show, we planned on recording visitors with cameras and microphones hidden around the room and displaying data in a cage to reflect the idea that you can see but not touch your own personal data.</p>
 
-                    <p class="normal-text">Before we could actually produce anything, our school was locked down and we switched to online learning. To make our project digital, we modeled the components in Maya and created simulated interaction in a CoSpaces virtual environment. At a professor’s suggestion, we decided to look into including YOLO object detection to simulate the feeling of being watched since we were no longer making a physical system.</p>
+
+                    <div class="yolo">
+                        <p class="normal-text">Before we could actually produce anything, our school was locked down and we switched to online learning. To make our project digital, we modeled the components in Maya and created simulated interaction in a CoSpaces virtual environment. At a professor’s suggestion, we decided to look into including <a href="https://pjreddie.com/darknet/yolo/">YOLO real-time object detection developed by Joseph Redmon</a> to simulate the feeling of being watched since we were no longer making a physical system. After many, many hours of troubleshooting the installation of Python and the setup of the actual project, I was able to apply the system to some Youtube videos.</p>
+                        
+                        <video controls class="video" src="img/disclosure_video_cars.mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- <video controls class="video" src="img/disclosure_video_people.mp4"></video> -->
+                    </div>
 
 
                 </div>
@@ -100,6 +109,8 @@
                 <!-- Outcome -->
                 <div class="section outcome">
                     <h2 class="subheading">Outcome</h2>
+                    <p class="normal-text">Our class’s projects were showcased in a virtual component of GBC’s Year End Show. We used the CoSpaces platform, which entailed creating a scene for our project that visitors could enter and explore. I took the lead on this part of the project and with some code blocks and Typescript, I was able to add audio warnings that would play on collision with our cage that would warn the visitor they do not have authorization to access their data.</p>
+
                     <div class="grid-three-columns">
                         <img class="image" src="img/disclosure_cospace-cage.png"
                             alt="3D model in Cospace virtual environment">
@@ -108,7 +119,6 @@
                         <img class="image" src="img/disclosure_cospace-yolo.png" alt="">
                     </div>
 
-                    <p class="normal-text">Our class’s projects were showcased in a virtual component of GBC’s Year End Show.</p>
                     <p class="normal-text">This project was a great opportunity to learn about the natural design process and the ongoing problem-solving that takes place. I learned about the different types of problems designers come across, whether it was the logic of the concept narrative or the technology we were using. This was also my first time working with Python, and though this specific project required simply setting up a virtual environment for the code, I’m still quite proud that I was able to make it work with zero background experience.</p>
                 </div>
             </section>
@@ -127,7 +137,7 @@
                     </div>
                 </a>
                 <a class="mini-tile thumb-disclosure" href="project-disclosure.html">
-                    <img class="tile" src="img/thumbnail_disclosure.png" alt="Project Disclosure">
+                    <img class="tile" src="img/thumbnail_disclosure-bw.png" alt="Project Disclosure">
                     <div class="thumb-details fade-hover">
                         <h1 class="heading">Project Disclosure</h1>
                         <!-- <h2 class="subheading-small">Concept dev</h2> -->

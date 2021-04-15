@@ -66,7 +66,8 @@ html, body {
     font-size: 1.05em;
     margin-bottom: .75em;
     line-height: 160%;
-    padding: .3em 0;
+    /* padding: .3em 0; */
+    padding: .5em 0;
 }
 /* .bg-fill-primary {
     background-color: var(--primary-colour);
@@ -212,7 +213,7 @@ html, body {
     .fade-hover {
         animation: fade .25s ease-in-out;
     }
-    
+
     @keyframes fade {
         0% {
             opacity: 0;
