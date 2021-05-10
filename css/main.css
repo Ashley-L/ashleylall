@@ -1,22 +1,29 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,500&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
 
     /*COLOURS*/
-    --background: rgb(255, 255, 255); /*#ffffff*/
-    --main-text: rgb(45, 45, 45); /*2d2d2d*/
-    --main-dark: rgb(45, 45, 45);
+    /* Main */
+    --colour_light: rgb(245, 245, 245); /*#f5f5f5*/
+    --colour_medium-light: rgb(215, 215, 215); /*d7d7d7*/
+    --colour_medium: rgb(182, 182, 182); /*b6b6b6*/
+    --colour_medium-dark: rgb(113, 113, 113); /*717171*/
+    --colour_dark: rgb(45, 45, 45); /*#2d2d2d*/
+
+    /* Main colour projects */
+    --colour_main-shltr: #fc7a80;
+    --colour_main-disclosure: #a0071a;
+    --colour_main-raywater: #daeef1;
+    --colour_main-gf: #00043f;
+    --colour_main-tdp: #1a1a1a;
+
+
+    /* opacity */
     --main-dark-opacity: rgba(45, 45, 45, .7);
-    --primary-colour: rgb(0, 214, 203); /*#00D6CB*/
-    --primary-tint: rgba(0, 214, 203, .3); /*#00D6CB*/
-    --secondary-colour: rgb(186, 127, 221); /*#BA7FDD*/
 
     /*FONTS*/
-    /* --heading-text: font-family: 'Raleway', sans-serif; */
-    --heading-text: 'Montserrat', sans-serif;
-    --main-text: 'Open Sans', sans-serif;
+    --text_heading: 'Poppins', sans-serif;
+    --text_main: 'Poppins', sans-serif;
 
 }
 
@@ -25,12 +32,6 @@
 /*********/
 /*GENERAL*/
 /*********/
-/* body {
-    padding-top: 48px;
-} */
-/* .main {
-    height: 100vh;
-} */
 
 html, body {
     height: 100%;
@@ -38,17 +39,14 @@ html, body {
 }
 
 .heading {
-    font-family: var(--heading-text);
+    font-family: var(--text_heading);
     font-size: 2em;
     text-align: center;
     justify-content: center;
-    text-transform: uppercase;
-    /* padding-bottom: .25em; */
-    /* margin-bottom: 1em; */
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .subheading {
-    font-family: var(--heading-text);
+    font-family: var(--text_heading);
     font-size: 1.5em;
     text-align: center;
     /* padding: .25em .25em; */
@@ -56,31 +54,23 @@ html, body {
 }
 .subheading-small {
     font-size: 1em;
-    font-family: var(--heading-text);
+    font-family: var(--text_heading);
     text-align: center;
     padding-top: 3em;
     margin-bottom: .25em;
 }
 .normal-text {
-    font-family: var(--main-text);
+    font-family: var(--text_main);
     font-size: 1.05em;
     margin-bottom: .75em;
     line-height: 160%;
     /* padding: .3em 0; */
     padding: .5em 0;
 }
-/* .bg-fill-primary {
-    background-color: var(--primary-colour);
-    display: table;
-    margin: 0 auto;
-    padding: .15em;
+
+.emphasis {
+    font-weight: 600;   
 }
-.bg-fill-secondary {
-    background-color: var(--secondary-colour);
-    display: table;
-    margin: 0 auto;
-    padding: .15em;
-} */
 
 
 
@@ -91,13 +81,13 @@ html, body {
 /*TOP BAR*/
 /*********/
 .topbar {
-    background-color: var(--main-dark);
+    background-color: var(--colour_dark);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
     padding: 1em 1.5em;
-    box-shadow: 0px 0px 5px var(--main-dark);
+    box-shadow: 0px 0px 5px var(--colour_dark);
     min-width: 100vw;
     height: 3.5em;
     letter-spacing: 4px;
@@ -122,12 +112,12 @@ html, body {
 
 }
 .nav .options a {
-    color: var(--background);
-    font-family: var(--heading-text);
+    color: var(--colour_light);
+    font-family: var(--text_heading);
     font-size: .75em;
     padding: 0 1em;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: lowercase;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -140,9 +130,10 @@ html, body {
 /*FOOTER*/
 /********/
 .footer {
-    background-color: var(--main-dark);
-    color: var(--background);
+    background-color: var(--colour_dark);
+    color: var(--colour_light);
     text-align: center;
+    text-transform: lowercase;
     justify-content: center;
     font-size: .5em;
     padding: 1em;
