@@ -40,20 +40,19 @@ html, body {
 
 .heading {
     font-family: var(--text_heading);
-    font-size: 2em;
+    /* font-size: 2em; */
     text-align: center;
     justify-content: center;
-    letter-spacing: 2px;
 }
 .subheading {
     font-family: var(--text_heading);
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     text-align: center;
     /* padding: .25em .25em; */
     margin-bottom: .25em;
 }
 .subheading-small {
-    font-size: 1em;
+    /* font-size: 1em; */
     font-family: var(--text_heading);
     text-align: center;
     padding-top: 3em;
@@ -61,9 +60,8 @@ html, body {
 }
 .normal-text {
     font-family: var(--text_main);
-    font-size: 1.05em;
+    /* font-size: 1.05em; */
     margin-bottom: .75em;
-    line-height: 160%;
     /* padding: .3em 0; */
     padding: .5em 0;
 }

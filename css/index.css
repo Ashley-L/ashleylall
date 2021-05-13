@@ -2,7 +2,6 @@
 /*PROJECTS*/
 /**********/
 
-
 /*Thumbnails*/
 .projects {
     padding-top: 56px;
@@ -39,7 +38,23 @@
 
 .projects .tile-intro {
     background-color: var(--colour_light);
+    padding: 2em;
 }
+.projects .tile-intro .content {
+    letter-spacing: 1px;
+    line-height: 100%;
+    max-width: 500px;
+}
+.projects .tile-intro .greeting {
+    font-size: 1.75em;
+}
+.projects .tile-intro .blurb {
+    padding: 1em 0;
+    font-size: 1.375em;
+    line-height: 130%;
+}
+
+
 .projects .tile-shltr {
     background-color: var(--colour_main-shltr);
 }
@@ -81,8 +96,27 @@
     position: absolute;
 }
 
-
-
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.socials__icon {
+    margin-right: 1em;
+}
+.socials__icon i {
+    background-color: var(--colour_dark);
+    color: var(--colour_light);
+    padding: .5em;
+    font-size: 1.5em;
+}
+.socials__icon i:hover {
+    background-color: var(--colour_medium-light);
+    color: var(--colour_dark);
+    transition: background-color 200ms ease-in-out;
+    -webkit-transition: background-color 200ms ease-in-out;
+    -ms-transition: background-color 200ms ease-in-out;
+}
 
 /*******/
 /*ABOUT*/
@@ -137,26 +171,21 @@
 
 
 /* Icons */
-.socials {
+/* .socials {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* width: 100%; */
     margin-bottom: 2em;
 }
 .socials .link {
     position: relative;
-    /* width: 100%; */
-    /* margin: 0 auto; */
     padding: 2.5em;
 
 }
 .socials a {
-    /* margin: .5em; */
     display: flex; 
     align-items: center;
     justify-content: center;
-    /* border-radius: 100%; */
     text-decoration: none;
 }
 
@@ -175,7 +204,6 @@
     color: var(--main-dark);
 }
 
-/* github is reverse of normal icons */
 .github .socials__icon {
     font-size: 3.5em;
     color: var(--main-dark); 
@@ -189,7 +217,7 @@
 }
 .socials .github a:hover .socials__icon {
     color: var(--primary-colour);
-}
+} */
 
 
 
@@ -208,6 +236,10 @@
 
 @media screen and (min-width: 768px) {
 
+    .tile-intro .content {
+        max-width: 400px;
+    }
+
     /*Thumbnails*/
     .projects {
         grid-template-columns: 1fr 1fr;  
@@ -218,6 +250,10 @@
 
 
 @media screen and (min-width: 1024px) {
+
+    .socials {
+        justify-content: start;
+    }
 
     /*Thumbnails*/
     .projects {
