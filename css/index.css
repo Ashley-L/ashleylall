@@ -4,7 +4,7 @@
 
 /*Thumbnails*/
 .projects {
-    padding-top: 56px;
+    padding-top: 48px;
     display: grid;
     grid-template-columns: 1fr;
 }

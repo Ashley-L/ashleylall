@@ -84,16 +84,16 @@ html, body {
     top: 0;
     left: 0;
     z-index: 9999;
-    padding: 1em 1.5em;
+    padding: 0 1em;
     box-shadow: 0px 0px 5px var(--colour_dark);
-    min-width: 100vw;
-    height: 3.5em;
-    letter-spacing: 4px;
+    width: 100%;
+    letter-spacing: 1.5px;
     display: flex;
     justify-content: space-between;
 }
 .logo {
     width: 2em;
+    background-color: var(--colour_light);
 }
 .logo img {
     /* width: 1.5em; */
@@ -107,20 +107,26 @@ html, body {
     text-align: center;
     display: flex;
     align-items: center;
-
 }
 .nav .options a {
+    display: block;    
     color: var(--colour_light);
     font-family: var(--text_heading);
     font-size: .75em;
-    padding: 0 1em;
+    padding: 1.5em;
     text-decoration: none;
     text-transform: lowercase;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
 }
-
+.nav .options li:hover a {
+    background-color: var(--colour_medium-light);
+    color: var(--colour_dark);
+    transition: background-color 200ms ease-in-out;
+    -webkit-transition: background-color 200ms ease-in-out;
+    -ms-transition: background-color 200ms ease-in-out;
+}
 
 
 
@@ -156,13 +162,7 @@ html, body {
     /* .logo img {
         width: 2em;
     } */
-    .nav .options a {
-        font-size: 1.05em;
-        /* padding-right: 1em; */
-        font-weight: 400;
-        padding: 0 2em;
 
-    }
 
  }
 
@@ -197,16 +197,18 @@ html, body {
     }
 
     /* Link hover */
-    .link-hover__text {
+    /* .link-hover__text {
         color: var(--main-text);
     }
     .link-hover__text:hover {
         color: var(--primary-colour);
     }
 
-    .link-hover__heading:hover a {
-        color: var(--primary-colour);
-    }
+    .link-hover__heading:hover {
+        background-color: var(--colour_medium-light);
+        color: var(--colour_dark);
+    } */
+
 
 
     /* animation */
